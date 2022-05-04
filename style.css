@@ -1,0 +1,166 @@
+/* ===== CSS RESET =================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  color: var(--white);
+  /* background-color: var(--dark-blue); */
+  font-family: "JetBrains Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* ===== BASE =================================================*/
+
+:root {
+  font-size: 100%;
+  --dark-blue: #2f2e41;
+  --white: #fff;
+  --main-green: #00bfa6;
+  --mid-grey: #c2c2c2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--dark-blue);
+}
+
+.page {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+/* ===== NAV =================================================*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 101px;
+  /* margin-top: -20px; */
+}
+
+#logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white);
+}
+
+#logo img {
+  max-height: 16px;
+  max-width: 13.4px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 64px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 500;
+}
+
+ul li a {
+  transition-duration: 0.3s;
+}
+
+ul li a:hover {
+  color: var(--main-green);
+}
+
+/* ===== MAIN =================================================*/
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+main img {
+  width: 401px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 56px;
+  font-weight: normal;
+  width: 614px;
+  text-align: center;
+}
+
+span {
+  color: var(--main-green);
+  font-weight: bold;
+}
+
+section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--mid-grey);
+  margin: 59px 0 0 0;
+  text-align: center;
+}
+
+/* ===== FOOTER =================================================*/
+
+footer {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 157px;
+  margin-bottom: 23px;
+  position: relative;
+}
+
+hr {
+  border: 1px solid #00bfa6;
+  margin: auto auto 27px;
+  width: 568px;
+  clear: both;
+  /* display: block; */
+  /* background-color: var(--main-green); */
+  height: 0px;
+}
+
+footer a {
+  font-weight: 700;
+}
+
+#padlock {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  max-width: 51px;
+  max-height: 62px;
+}
